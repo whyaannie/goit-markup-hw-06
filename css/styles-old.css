@@ -364,12 +364,6 @@ margin-right: 120px;
     color: #FFFFFF;
 }
 
-.social-text {
-    font-weight: 500;
-    color: #ffffff;
-    margin-bottom: 16px;
-}
-
 .social-links {
     display: flex;
     gap: 16px;
