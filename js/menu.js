@@ -1,5 +1,5 @@
-const modal = document.querySelector('[data-menu]');
 const openBtn = document.querySelector('[data-menu-open]');
+const modal = document.querySelector('[data-menu]');
 const closeBtn = document.querySelector('[data-menu-close]');
 
 openBtn.addEventListener('click', () => {
