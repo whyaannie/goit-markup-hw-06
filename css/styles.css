@@ -1071,13 +1071,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         }
     
     .footer-container {
-        max-width: 584px;
         display: flex;
         align-items: baseline;
         justify-content: flex-start;
         text-align: left;
-        row-gap: 72px;
-        column-gap: 24px;
         flex-direction: row;
         flex-wrap: wrap;
         }
@@ -1260,8 +1257,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         }
     
         .footer-container {
+            max-width: 1158px;
             display: flex;
             align-items: baseline;
+            flex-direction: row;
+            flex-wrap: nowrap;
         }
     
         .footer-logo-box {
