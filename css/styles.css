@@ -290,7 +290,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 .close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #ffffff;
+    color: #2E2F42;
 }
 
 .mobile-menu-nav {
@@ -320,16 +320,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .mobile-contact-list {
-    width: 193px;
-    height: 72px;
-}
-
-.mobile-contact-list {
+    font-style: normal;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 24px;
+    width: 193px;
+    height: 72px;
 }
 
 .contact-link {
@@ -416,10 +414,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
-    padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
-    min-height: 400px;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -427,6 +423,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(/goit-markup-hw-06/images/web-studio/people-office@2x.jpg);
     }
+}
+
+.hero-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 .section-title {
@@ -453,10 +454,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color: #fff;
     cursor: pointer;
 
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding: 16px 32px;
     border: none;
     border-radius: 4px;
     width: 169px;
@@ -470,6 +469,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color: #2E2F42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(/goit-markup-hw-06/images/web-studio/Dark-bg-t.jpg);
+    }
+
+    .hero-container {
+        padding-top: 112px;
+        padding-bottom: 112px;
     }
 
     .section-title {
@@ -491,6 +495,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(/goit-markup-hw-06/images/web-studio/people-office-d.jpg);
     }
+
+    .hero-container {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
 }
 
 @media screen and (min-width:1158px) and (min-resolution: 192dpi) {
@@ -535,7 +545,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    text-align: center;
 }
 
 .skills-list .skills-title {
@@ -681,7 +690,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 @media screen and (min-width: 768px) {
     
         .team-list {
-            gap: 24px;
+            gap: 64px 24px;
             align-items: center;
             flex-direction: row;
             flex-wrap: wrap;
@@ -776,11 +785,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
+        flex-direction: row;
     }
     
     .portfolio-item {
         display: block;
         box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        width: calc((100% - 24px) / 2);
     }
 
     .app-description {
@@ -885,7 +896,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
+    gap: 72px;
 }
 
 .footer-logo-box {
@@ -894,7 +907,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 .footer-logo {
     text-decoration: none;
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -977,7 +990,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .footer-subscribe {
-
+    
 }
 
 .subscribe-text {
@@ -991,10 +1004,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .form-subscribe {
-    gap: 16px;
 
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    opacity: 0.3;
 }
 
 .subscribe-input-wrap {
@@ -1024,7 +1034,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .button-subscribe {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -1032,10 +1041,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     gap: 16px;
     
     border-radius: 4px;
-    padding: 8px 24px;
     width: 165px;
     height: 40px;
-    
     background: #4D5AE5;
 
     font-family: "Roboto", sans-serif;
@@ -1071,6 +1078,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         text-align: left;
         row-gap: 72px;
         column-gap: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
         }
     
     .footer-logo-box {
@@ -1162,10 +1171,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #F4F4FD;
-        }
-    
-        .footer-subscribe {
-            margin-left: 80px;
         }
     
         .subscribe-text {
